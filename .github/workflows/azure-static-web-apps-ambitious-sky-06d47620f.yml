@@ -27,12 +27,12 @@ jobs:
           
       - name: Install dependencies
         run: |
-          cd poke-dex-lab/source/pokedex-angular
+          cd sistemas-distribuidos/poke-dex-lab/source/pokedex-angular
           npm install --ignore-scripts
           
       - name: Build Angular app
         run: |
-          cd poke-dex-lab/source/pokedex-angular
+          cd sistemas-distribuidos/poke-dex-lab/source/pokedex-angular
           npm run build -- --configuration production
       
       - name: Find build output
@@ -80,3 +80,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_PLANT_05723CF0F }}
           action: "close"
+
