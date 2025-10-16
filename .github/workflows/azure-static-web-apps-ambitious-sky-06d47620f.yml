@@ -25,6 +25,11 @@ jobs:
         with:
           node-version: '18'
           
+      - name: Install dependencies
+        run: |
+          cd poke-dex-lab/source/pokedex-angular
+          npm install --ignore-scripts
+          
       - name: Build Angular app
         run: |
           cd poke-dex-lab/source/pokedex-angular
